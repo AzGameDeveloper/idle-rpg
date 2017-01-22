@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+                     Idle RPG
+                    ==========
+               Copyrigh Az 2016
+               Inprise by Candy Box and A Dark Room
+               If you have interest in making more games like this, join my Studio :D
+               Studio Group: https://az-gamestudio.slack.com
+-->
+<!--
+HEY! YOU'RE LOOKING AT THE SOURCE CODE! cheater ;)
+You're gotta go through ME, the DEVELOPER if you want to change the CODE!!!! MUAHAHAHAHA
+You're not going to past this laser! It burns every thing it TOUCH!!!
+
+
+      im one of the player. I tried to cheat but i can't just walk past this laser :( 
+   \o/
+|/=======================================================================\|
+WHAT!! YOU JUST WALK PAST IT????
+UNFAIR!!
+Be careful, don't cheat too much...
+My code is too easy to change sooooo....
+'You made the developer bored. He gave up.'
+-->
+<HTML style='font-family:sans-serif'>
+<head>
+<title>Idle RPG</title>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+<script src='Scripts/gameScript.js'> </script>
+<noscript> It seems like your browser does not support JavaScript or maybe that you disable it. Please update to a new browser or allow JavaScript then try again!</noscript>
+<link rel='stylesheet' href=Scripts/pageStyle.css>
+<body>
+<div id='tab' style='display: none; text-align: center;'>
+<a href='index.html'>
+  <button class='tabButton active'>Treasure room</button>
+</a>
+<a href='inventory.html'>
+  <button class='tabButton'>Inventory</button>
+</a>
+<a href='map.html'>
+  <button class='tabButton'>Map</button>
+</a>
+<a href='quest'>
+  <button class='tabButton'>Quest</button>
+</a>
+</div>
+<p id='numberOfCoins'>You got 0 coin</p>
+<p id='numberOfGolds'>You mined 0 gold</p>
+<button id='get1Coin' onclick='addCoins()'>Collect a coin.</button>
+<button style='display:none' id='add10Coins' onclick='add10Coins()'>Get 10 coins.</button>
+<button onclick='throwCoins()'>Throw 10 coins away.</button>
+<br>
+<div style=float:right; id='resources'>
+<form><!-- set the resources field-->
+  <fieldset>
+    <legend id='resource'><h3>RESOURCES</h3></legend>  
+    <span>Iron: <span id='numberOfIrons'>0</span>
+    <br><br>
+    <span>Silver:  <span id='numberOfSilver'>0</span>
+    <br><br>
+    <span>Coal:  <span id='numberOfCoal'>0</span>
+    <br><br>
+  </fieldset>
+</form>
+</div>
+<div id='goldMine'><!-- the gold mine! I wonder if i can stole anything here-->
+    <pre style= border: 3px solid black>
+_GOLD MINE_       _IRON MINE_       _GOLD MINE_       _IRON MINE_
+|         |       |         |       |         |       |         |
+|         |       |         |       |         |       |         |
+    </pre>
+</div>
+<div style=display:none id='shop'>
+	<pre>
+<h2>SHOP</h2>
+"Hi, im a blacksmith. I see you have a lot of coins, so i think that you might be interest in my weapons!"
+<p id="info0">Buy a item to unlock a new item!</p>
+<div id='woodenSword'>
+Wooden Sword		    
+   .
+  / \
+  | |
+  | |
+  |.|
+  |.|
+  |:|
+  |:|
+'--8--'
+   8
+   O
+Cost: 2000 coins    
+<button id='buyWoodenSword' onclick='boughtWoodenSword();' disabled>Buy</button>
+</div>
+<div id='ironSword'>
+Iron Sword
+   .
+  / \
+  | |
+  | |
+  |.|
+  |.|
+  |:|
+  |:|
+ _|*|_
+\--+--/
+   8
+   8
+   O
+Cost: 50 Golds
+<button id='buyIronSword' onclick='boughtIronSword();' disabled>Buy</button>
+<div>
+	</pre>
+</div>
+</HTML>
